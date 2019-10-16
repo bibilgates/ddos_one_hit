@@ -3,6 +3,7 @@
 <br>
 $ pkg update <br>
 $ pkg install python2 <br>
+$ pkg install php <br>
 $ pkg install git <br>
 $ git clone https://github.com/bibilgates/ddos_one_hit.git <br>
 $ cd ddos_one_hit <br>
